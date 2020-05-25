@@ -38,6 +38,45 @@ session_start();
 
 
 <html>
+<style>
+  	body{
+  		background-color: aliceblue;
+  		margin: 0;
+  		padding:0;
+  		box-sizing: border-box;
+  		font-family: helvetica;
+  	}
+
+  	form{
+  		border: 1px solid antiquewhite;
+  		padding: 20px;
+  		margin: 0 auto;
+  		width: 500px;
+  	}
+
+  	input{
+  		border: none;
+  		padding: 10px;
+  		background: antiquewhite;
+  		border-radius: 5px;
+  		font-family: helvetica;
+  		font-size:18px;
+  	}
+
+  	button{
+  		border: none;
+  		padding: 5px 25px;
+  		background: antiquewhite;
+  		border-radius: 5px;
+  		font-family: helvetica;
+  		font-size:18px;
+  	}
+
+  	label{
+  		font-size:18px;
+  		font-family: helvetica;
+  	}
+  </style>
   <body>
   	<h3 style="text-align:center">Simple PHP Login snippet</h3>
 
@@ -46,11 +85,11 @@ session_start();
   		
   		<Label for="username">Username
   		<input type="text" id="username" name="username" />
-  		</Label><br/>
+  		</Label><br/><br/>
 
   		<Label for="password"> Password
   		<input type="password" id="password" name="password" />
-  		</Label><br/>
+  		</Label><br/><br/>
 
   		<button type="submit" name="login">Submit</button>
   	</form>

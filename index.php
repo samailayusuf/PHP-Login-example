@@ -1,5 +1,5 @@
 <?php
-require('config/connection.php');
+ require('config/connection.php');
 
  $response = "";
   
@@ -15,10 +15,10 @@ require('config/connection.php');
 	     $result = mysqli_query($con, $query); //executing the query and storing it in result variable
 
 	     if($result){ //checking if the result variable contains valid data and queery was successful
-	 	 $response = "Registration successful <a href='./user_pages/login.php'>Click Here To Login</a>";
+	 	 $response = "Registration successful <a href='./user_pages/login.php'>Login Here Please</a>";
 	 	//header("Location: ../index.php");
 	     }else{
-	 	 	$response = "error somewhere";
+	 	 	$response = "Sorry there is an error somewhere!";
 		 }
 
 	 }else{
@@ -26,16 +26,50 @@ require('config/connection.php');
 	 	$response = "All values are required";
 
 	 }
-
-	
-
 }
-
 ?>
 
-
 <html>
-  <body>
+  <style>
+  	body{
+  		background-color: aliceblue;
+  		margin: 0;
+  		padding:0;
+  		box-sizing: border-box;
+  		font-family: helvetica;
+  	}
+
+  	form{
+  		border: 1px solid antiquewhite;
+  		padding: 20px;
+  		margin: 0 auto;
+  		width: 500px;
+  	}
+
+  	input{
+  		border: none;
+  		padding: 10px;
+  		background: antiquewhite;
+  		border-radius: 5px;
+  		font-family: helvetica;
+  		font-size:18px;
+  	}
+
+  	button{
+  		border: none;
+  		padding: 5px 25px;
+  		background: antiquewhite;
+  		border-radius: 5px;
+  		font-family: helvetica;
+  		font-size:18px;
+  	}
+
+  	label{
+  		font-size:18px;
+  		font-family: helvetica;
+  	}
+  </style>
+  <body >
   	<h3 style="text-align: center">Simple PHP Login snippet</h3>
 
   	<form action="" method="POST" style="text-align:center;">
