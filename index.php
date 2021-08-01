@@ -1,5 +1,5 @@
 <?php
- require('config/connection.php');
+ require('config/connection.php'); //importing database connection file
 
  $response = "";
   
